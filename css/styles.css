@@ -1,0 +1,195 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+   background-image: url('/img/e8ff1232-940c-41ca-916b-83d343157510.webp');
+    color: #333;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+}
+
+header {
+    background-color: #333;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    background-image: url('/img/DALL·E\ 2024-10-24\ 20.07.45\ -\ A\ serene\ coastal\ town\ at\ sunset\,\ with\ the\ sun\ dipping\ below\ the\ horizon\,\ casting\ a\ golden-orange\ glow\ over\ the\ ocean\ and\ sky.\ The\ scene\ includes\ tall\ .webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+#about p {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#projects .project-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 400px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+#hobbies ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#hobbies ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input,
+#contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}.card-2{
+    background-image: url('/img/Captura\ de\ Ecrã\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    cursor: pointer;
+    
+}.card-1 h3{
+    color: black;
+
+
+}.card-1 a{
+    text-decoration: none;
+}
+.card-3{
+    background-image: url('/img/Captura\ de\ Ecrã\ \(5\).png');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: center;
+}.card-4{
+    background-image: url('/img/Captura\ de\ Ecrã\ \(6\).png');
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: center;
+}
+
+.hover :hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+@media (max-width: 480px) {
+    .card {
+        width: 200px;
+        height: 200px;
+        font-size: 0.9rem; /* Texto menor para celulares */
+        margin: 0px 1px;
+        margin-bottom: 2px solid gray;
+    }.card-1 h3{
+        font-size: 0.9rem;
+        opacity: 0; 
+    }.card-1{
+        background-image: url('/img/Captura\ de\ Ecrã\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        background-position: center;
+    }.card-2{
+        background-image: url('/img/Captura\ de\ Ecrã\ \(4\).png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        cursor: pointer;
+        
+    }
+}
