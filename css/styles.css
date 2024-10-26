@@ -171,16 +171,19 @@ footer .social-icons a {
 }
 
 .hover :hover{
-    transform: scale(1.1);
+    transform:scale(1.2);
     border-bottom: 2px solid rgb(0, 0, 0);
 }
 @media (max-width: 480px) {
     .card {
-        width: 200px;
-        height: 80px;
+       width: 70vw;
+        height: 150px;
         font-size: 0.9rem; /* Texto menor para celulares */
-        margin: 0px 1px;
+        margin: 1px auto;
         margin-bottom: 2px solid gray;
+        margin-bottom: 20px;
+        
+        
     }.card-1 h3{
         font-size: 0.9rem;
         opacity: 0; 
@@ -188,7 +191,7 @@ footer .social-icons a {
         background-image: url('/img/Captura\ de\ Ecrã\ \(1\).png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+     
     }.card-3{
         background-image: url('/img/Captura\ de\ Ecrã\ \(5\).png');
         background-repeat: no-repeat;
@@ -215,5 +218,22 @@ footer .social-icons a {
         box-sizing: border-box;
         font-family: Arial, sans-serif;
         font-size: 0.9rem;
+        
+    }#about,#projects{
+        padding: 0;
+    }#hobbies{
+        padding: 20px;
+        
+    }#hobbies ul li{
+        font-size: 0.9rem;
+    }body{
+        background-image: url('/img/fotobody.webp');
+        background-position: center;
+       
+        color: rgb(247, 247, 247);
+        font-weight: bold;
+    }.hover{
+        display: flex;
+        flex-direction: column;
     }
 }
