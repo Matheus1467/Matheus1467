@@ -1,239 +1,125 @@
-/* Estilos Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    line-height: 1.6;
-   background-image: url('/img/e8ff1232-940c-41ca-916b-83d343157510.webp');
-    color: #333;
-    background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment:fixed;
-}
-
-header {
-    background-color: #333;
+*{
     color: rgb(0, 0, 0);
-    padding: 20px 0;
-    text-align: center;
-    background-image: url('/img/DALL·E\ 2024-10-24\ 20.07.45\ -\ A\ serene\ coastal\ town\ at\ sunset\,\ with\ the\ sun\ dipping\ below\ the\ horizon\,\ casting\ a\ golden-orange\ glow\ over\ the\ ocean\ and\ sky.\ The\ scene\ includes\ tall\ .webp');
+}
+
+body{
+    margin: 0;
+    background-image: url('/img/fotobody.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+
+}header{
+    background-image: url('/img/DALL·E\ 2024-10-24\ 20.07.45\ -\ A\ serene\ coastal\ town\ at\ sunset\,\ with\ the\ sun\ dipping\ below\ the\ horizon\,\ casting\ a\ golden-orange\ glow\ over\ the\ ocean\ and\ sky.\ The\ scene\ includes\ tall\ .webp');
+    padding: 30px;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;
+}header h1{
     text-align: center;
+    
+}header nav{
+text-align: center;
+}
+header nav a{
+    color:rgb(255, 0, 0);
+    font-size: 20px;
+    margin:0px 8px;
+    font-weight: bolder;
+}
+.o1{
+    width:100%;
 }
 
-#about h2 {
-    font-size: 2.5rem;
-}
-
-#about h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: #555;
-}
-
-#about p {
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-#projects .project-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
+.sobre ,.o2{
+    width:50%;
+    margin: 5px auto;
+    background-color: rgba(255,255,255, 0.5);
+    padding: 100px;
+    text-align: center;
+    color: #000000;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    height: 300px;
-    background-color: aquamarine;
-}
+    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+}.sobre h2{
+    font-size: 35px;
+}.sobre p{
+    font-size: 30px;
+    font-weight: bold;
+}.o2 .hobbies {
+    text-align: left;
+    line-height: 32px;
+    font-weight: bolder;
+}.cards h3{
+text-align: center;
+}.contato{
+width: 100%;
+text-align: center;
 
-.card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
+}.ulcont {
+    width:50%;
+    margin: 5px auto;
+    padding: 100px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}.ulcont img {
+    width: 60px;
+    margin: auto 10px;
 
-#hobbies ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-#hobbies ul li {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact input,
-#contact textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contact-info {
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+}.ulcont h3{
+    color: beige;
+}footer{
     text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}.card-2{
-    background-image: url('/img/Captura\ de\ Ecrã\ \(1\).png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     
-    cursor: pointer;
-    
-}.card-1 h3{
-    color: black;
+    padding: 20px;
+}footer p{
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
 
+}footer img{
+    display: inline;
+    width: 30px;
+}.fooer{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding:20px;
+  
+}span{
+font-size: 30px;
+color: rgb(0, 0, 0);
+font-weight: bold;
+}@media ( max-width:480px){
+    .sobre h2, .sobre p,.hobbies li {
+     font-size: 0.8rem;
+   
+}.hobbies h2{
+    text-align: center;
+    font-size: 10px;
 
-}.card-1 a{
-    text-decoration: none;
+}.fooer{
+    width: 90%;
+}.ulcont img{
+    width: 20%;
+}header nav a{
+    font-size: 0.9rem;
+   
+}.sobre ,.o2{
+   
+}header h1{
+    font-size: 19px;
+}.fooer p{
+    font-size: 15px;
+}span{
+    font-size: 15px;
+}.fooer img{
+    width: 19px;
 }
-.card-3{
-    background-image: url('/img/Captura\ de\ Ecrã\ \(5\).png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}.card-4{
-    background-image: url('/img/Captura\ de\ Ecrã\ \(6\).png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}.card-1{
-    background-image: url('/img/Captura\ de\ Ecrã\ \(4\).png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+pre{
+    margin: 0;
 }
-
-.hover :hover{
-    transform:scale(1.2);
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
-@media (max-width: 480px) {
-    .card {
-       width: 70vw;
-        height: 150px;
-        font-size: 0.9rem; /* Texto menor para celulares */
-        margin: 1px auto;
-        margin-bottom: 2px solid gray;
-        margin-bottom: 20px;
-        
-        
-    }.card-1 h3{
-        font-size: 0.9rem;
-        opacity: 0; 
-    }.card-2{
-        background-image: url('/img/Captura\ de\ Ecrã\ \(1\).png');
-        background-repeat: no-repeat;
-        background-size: contain;
-     
-    }.card-3{
-        background-image: url('/img/Captura\ de\ Ecrã\ \(5\).png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }.card-4{
-        background-image: url('/img/Captura\ de\ Ecrã\ \(6\).png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }#card-d{
-        background-image: url('/img/Captura\ de\ Ecrã\ \(4\).png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }header h1 {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-    }#about h2 , #about h3 {
-        font-size: 0.9rem;
-    }* {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-        font-size: 0.9rem;
-        
-    }#about,#projects{
-        padding: 0;
-    }#hobbies{
-        padding: 20px;
-        
-    }#hobbies ul li{
-        font-size: 0.9rem;
-    }body{
-        background-image: url('/img/fotobody.webp');
-        background-position: center;
-       
-        color: rgb(247, 247, 247);
-        font-weight: bold;
-    }.hover{
-        display: flex;
-        flex-direction: column;
-    }
 }
