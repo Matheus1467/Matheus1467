@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrigado | Confiança Crédito</title>
+<style>
+:root{
+  --bg:#0f0f0f;
+  --card:#181818;
+  --accent:#25F4EE;
+  --accent2:#FE2C55;
+  --text:#fff;
+  --muted:#bdbdbd;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:var(--bg);
+  font-family:'Poppins',sans-serif;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  color:var(--text);
+}
+.container{
+  width:100%;
+  max-width:520px;
+}
+.card{
+  background:var(--card);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+  text-align:center;
+}
+.logo{
+  width:56px;
+  height:56px;
+  margin:0 auto 10px;
+  border-radius:16px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000;
+  font-weight:900;
+  font-size:22px;
+}
+h1{
+  margin:10px 0;
+  font-size:clamp(1.3rem,5vw,1.7rem);
+}
+p{
+  margin:8px 0;
+  font-size:clamp(.9rem,4vw,1rem);
+  color:var(--muted);
+}
+.status{
+  margin:20px 0;
+}
+.spinner{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  border:5px solid #eaeaea;
+  border-top-color:var(--accent2);
+  animation:spin 1s linear infinite;
+  margin:0 auto 12px;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.timer{
+  font-weight:800;
+  font-size:1.1rem;
+  color:#fff;
+}
+.trust{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+.trust div{
+  background:#202020;
+  padding:10px;
+  border-radius:10px;
+  font-size:.8rem;
+}
+.note{
+  margin-top:14px;
+  font-size:.7rem;
+  color:#888;
+  text-align:center;
+}
+@media(min-width:480px){
+  .trust{grid-template-columns:repeat(3,1fr)}
+  .card{padding:30px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="logo">✓</div>
+    <h1>Pagamento Confirmado</h1>
+    <p>Obrigado por confiar na <strong>Confiança Crédito</strong>.</p>
+    <div class="status">
+      <div class="spinner"></div>
+      <p>Estamos liberando o valor aprovado para sua conta.</p>
+      <div class="timer" id="timer">⏱️ Até 30 minutos</div>
+    </div>
+    <div class="trust">
+      <div>🔒 Processo seguro</div>
+      <div>⚡ Liberação rápida</div>
+      <div>📱 Atendimento digital</div>
+    </div>
+    <div class="note">
+      *O prazo de até 30 minutos pode variar conforme o horário bancário e validações internas.
+    </div>
+  </div>
+</div>
+
+<script>
+// Contador visual de 30 minutos
+let minutos = 30;
+const timer = document.getElementById('timer');
+setInterval(() => {
+  if(minutos > 0){
+    minutos--;
+    timer.textContent = `⏱️ Aproximadamente ${minutos} minutos restantes`;
+  }
+}, 60000);
+</script>
+</body>
+</html>
