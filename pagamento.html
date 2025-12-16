@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crédito Aprovado | Confiança Crédito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f0f;--card:#181818;--pink:#ff0050;--cyan:#00f2ea;--ok:#21d07a;--text:#fff;--muted:#bdbdbd;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;min-height:100vh;background:linear-gradient(135deg,#000 40%,#111);
+      font-family:'Poppins',sans-serif;color:var(--text);
+      display:flex;align-items:center;justify-content:center;padding:16px;
+    }
+    .container{width:100%;max-width:520px}
+    .card{
+      background:var(--card);border-radius:24px;padding:24px;text-align:center;
+      box-shadow:0 22px 55px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.06);
+    }
+    .logo{
+      width:54px;height:54px;border-radius:18px;margin:0 auto 10px;
+      background:linear-gradient(135deg,var(--pink),var(--cyan));display:grid;place-items:center;color:#000;font-weight:900;font-size:1.1rem
+    }
+    h1{font-size:clamp(1.4rem,5vw,1.8rem);margin:12px 0 6px}
+    p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+    .badge{
+      display:inline-block;padding:10px 16px;border-radius:999px;margin:10px 0;
+      background:rgba(33,208,122,.15);color:var(--ok);font-weight:900;font-size:.85rem
+    }
+    .check{
+      width:76px;height:76px;border-radius:50%;margin:12px auto;
+      background:rgba(33,208,122,.15);display:grid;place-items:center
+    }
+    .check::before{content:'✓';font-size:42px;color:var(--ok);font-weight:900}
+    .details{
+      background:#202020;border-radius:16px;padding:14px;margin:16px 0;font-size:.85rem
+    }
+    .details div{margin:6px 0}
+    .btn{
+      display:block;width:100%;margin-top:14px;padding:14px;border-radius:18px;
+      background:linear-gradient(90deg,var(--pink),var(--cyan));color:#000;text-decoration:none;font-weight:900;font-size:1rem
+    }
+    .note{margin-top:12px;font-size:.7rem;color:#9e9e9e}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">CC</div>
+      <span class="badge">CRÉDITO APROVADO</span>
+      <div class="check"></div>
+      <h1>Parabéns!</h1>
+      <p>Seu crédito foi aprovado após análise automática.</p>
+      <div class="details">
+        <div>⚡ Liberação rápida</div>
+        <div>🔒 Processo seguro</div>
+        <div>📱 Atendimento digital</div>
+      </div>
+      <a href="../teste.html" class="btn">Continuar para liberação</a>
+      <div class="note">*Sujeito às políticas internas e validações.</div>
+    </div>
+  </div>
+</body>
+</html>

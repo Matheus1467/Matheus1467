@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxa Administrativa | Confiança Crédito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --card:#181818;
+      --pink:#ff0050;
+      --cyan:#00f2ea;
+      --text:#ffffff;
+      --muted:#bdbdbd;
+      --ok:#21d07a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:linear-gradient(135deg,#000 40%,#111);
+      font-family:'Poppins',sans-serif;
+      color:var(--text);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+    }
+    .container{width:100%;max-width:520px}
+    .card{
+      background:var(--card);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:0 22px 55px rgba(0,0,0,.6);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .logo{
+      width:42px;height:42px;border-radius:14px;
+      background:linear-gradient(135deg,var(--pink),var(--cyan));
+      display:grid;place-items:center;color:#000;font-weight:900
+    }
+    h1{font-size:clamp(1.3rem,5vw,1.7rem);margin:12px 0 8px}
+    p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+    .price{
+      background:#202020;
+      border-radius:18px;
+      padding:18px;
+      text-align:center;
+      margin:14px 0;
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .price strong{font-size:2rem;color:var(--ok)}
+    .benefits{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+      margin:16px 0;
+      font-size:.85rem
+    }
+    .benefits div{
+      background:#202020;
+      border-radius:14px;
+      padding:12px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,.06)
+    }
+    .btn{
+      display:block;
+      width:100%;
+      padding:15px;
+      border-radius:18px;
+      background:linear-gradient(90deg,var(--pink),var(--cyan));
+      color:#000;
+      text-decoration:none;
+      font-weight:900;
+      text-align:center;
+      font-size:1rem;
+      margin-top:14px
+    }
+    .secure{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:8px;
+      font-size:.75rem;
+      color:#bdbdbd
+    }
+    .secure div{
+      background:#202020;
+      border-radius:12px;
+      padding:10px;
+      text-align:center
+    }
+    .note{
+      margin-top:14px;
+      font-size:.7rem;
+      color:#9e9e9e;
+      text-align:center
+    }
+    @media(min-width:480px){
+      .benefits{grid-template-columns:repeat(3,1fr)}
+      .card{padding:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="brand">
+        <div class="logo">CC</div>
+        <strong>Confiança Crédito</strong>
+      </div><h1>Taxa Administrativa</h1>
+  <p>Para prosseguir com a liberação do crédito aprovado, é aplicada uma taxa administrativa referente à validação e custos operacionais.</p>
+
+  <div class="price">
+    <div>Valor único</div>
+    <strong>R$ 15,00</strong>
+  </div>
+
+  <div class="benefits">
+    <div>📄 Validação cadastral</div>
+    <div>🔒 Processo seguro</div>
+    <div>⚡ Liberação rápida</div>
+  </div>
+
+  <a href="final.html" class="btn">Prosseguir para pagamento</a>
+
+  <div class="secure">
+    <div>🔐 Ambiente protegido</div>
+    <div>📱 Atendimento digital</div>
+    <div>🛡️ Política interna transparente</div>
+  </div>
+
+  <div class="note">
+    *Após a confirmação do pagamento, o valor aprovado entra em processamento para liberação, podendo ocorrer em até 30 minutos, conforme políticas internas e horários bancários.<br><br>
+    A Confiança Crédito realiza divulgação em plataformas digitais. Não possui vínculo ou garantia com terceiros.
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
